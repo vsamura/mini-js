@@ -1,1 +1,2 @@
-console.log("Привет JavaScript!")
+console.log("Привет мир и JavaScript!");
+
