@@ -34,3 +34,14 @@ function bytesSize(b){
 function evenNumber(A){
   return A%2 == 0
 }
+
+// Даны десять вещественных чисел в формате сторки "9 5 1 4 14 2 0 6 32 111". 
+// Найти их сумму и вернуть число
+function sumTenNumbers(A){
+  A = A.split(" ")
+  let res = 0
+  for (var i = 0; i < A.length; i++) {
+      res += (parseInt(A[i])) 
+  }
+  return res
+}
