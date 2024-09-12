@@ -23,3 +23,14 @@ function massInKilograms(K){
 function areaPerimeter(A, B){
   return `S = ${A * B}\nP = ${(A + B) * 2}`
 }
+
+// Дан размер файла в байтах. Используя операцию деления нацело, 
+// найти количество полных килобайтов, которые занимает данный файл (1 килобайт = 1024 байта)
+function bytesSize(b){
+  return Math.floor(b/1024)
+}
+
+// Дано целое число A. Проверить истинность высказывания: «Число A является четным»
+function evenNumber(A){
+  return A%2 == 0
+}
