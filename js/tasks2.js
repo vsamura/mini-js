@@ -97,3 +97,46 @@ function doubleInequality(A, B, C){
 
 // Дано целое число. Если оно является положительным, то прибавить к нему 1; 
 // если отрицательным, то вычесть из него 2; если нулевым, то заменить его на 10.
+function numMath(N){
+  return N == 0 ? 10 : N > 0 ? N +=1 : N -=2
+}
+
+// Дан номер месяца (1 — январь, 2 — февраль и т. д.). 
+// Вернуть название соответствующего времени года («зима», «весна», «лето», «осень»)
+// Если число менше 1 или больше 12 "Ошибка"
+function timeOfYear(month){
+  let result
+  switch(month) {
+    case 12: case 1: case 2: result = 'Зима'; break;
+    case 3: case 4: case 5: result = 'Весна'; break;
+    case 6: case 7: case 8: result = 'Лето'; break;
+    case 9: case 10: case 11: result = 'Осень'; break;
+    default: result = 'Ошибка';
+  }
+  return result
+}
+
+// Единицы массы пронумерованы следующим образом: 1 — килограмм, 2 — миллиграмм, 3 — грамм, 4 — тонна, 5 — центнер. 
+// Дан номер единицы массы (целое число в диапазоне 1–5) и масса тела в этих единицах (вещественное число). 
+// Найти массу тела в килограммах
+// Если единица массы менше 1 или больше 5 "Ошибка"
+function massKg(A, B){
+  let result
+  switch(A) {
+    case 1: result = B; break;
+    case 2: result = B / 1000000; break;
+    case 3: result = B / 1000; break;
+    case 4: result = B * 1000; break;
+    case 5: result = B * 100; break;
+    default: B = 'Ошибка';
+  }
+  return result
+}
+
+
+// Дано вещественное число — цена 1 кг конфет. Вывести стоимость 1, 2, 3 кг конфет
+function  priceSweets(cost){
+  console.log(cost * 1)
+  console.log(cost * 2)
+  console.log(cost * 3)
+}
