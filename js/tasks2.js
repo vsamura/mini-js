@@ -80,3 +80,11 @@ function squareSurface(a){
 function segmentsInSegment(A, B){
   return `Количество отрезков B, размещенных на отрезке A = ${Math.floor(A / B)}`
 }
+
+// Даны два целых числа: A, B. Проверить истинность высказывания: 
+//«Справедливы неравенства A ≥ 0 или B < –2»
+// Формат строки: "Неравенства A ≥ 0 или B < –2 ложны, при A=-3 B=7"
+function inequalityAreFair(A, B){
+  let res = A >= 0 || B < -2 ? "справедливы" : "ложны"
+  return `Неравенства A ≥ 0 или B < –2 ${res}, при A=${A} B=${B}`
+}
