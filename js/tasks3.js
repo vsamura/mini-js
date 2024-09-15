@@ -10,3 +10,22 @@ function  priceSweets2(cost){
   console.log(cost * 0.2)
   console.log(cost * 0.3)
 }
+
+// Дано вещественное число — цена 1 кг конфет. Вывести стоимость 1.2, 1.4, 1.6, 1.8 кг конфет.
+function priceSweets3(cost){
+  for(let i = 1.2; i <= 1.8; i += 0.2) {
+    console.log(Math.round(cost * i))
+  }
+}
+
+// Дано целое число N (> 0). Если оно является степенью числа 3, то вывести True, 
+// если не является — вывести False.
+function degreeNumber3(N){
+  return N % 3 == 0
+}
+
+// Описать функцию PowerA234(A), вычисляющую вторую, третью и четвертую степень числа A и возвращающую 
+// эти степени в массиве.
+function PowerA234(A){
+  retern [A**2, A**3, A**4]
+}
