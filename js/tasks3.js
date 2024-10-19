@@ -55,7 +55,7 @@ function Even(K){
   return res
 }
 
-// Даны два числа a и b. Найти их среднее арифметическое: (a + b)/2
+// Даны два числа a и b в виде строки через пробел. Найти их среднее арифметическое: (a + b)/2
 function arithmeticMean(StrNum){
   let data = StrNum.split(" ")
   let A = +data[0], B = +data[1]
